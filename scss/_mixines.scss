@@ -1,0 +1,22 @@
+@mixin placeholder {
+    color: #a4a4a4;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+}
+@mixin dropmenu-shadow {
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+}
+@mixin dropmenu-triangle {
+    content: '';
+    width: 12px;
+    height: 12px;
+    display:block;
+    position: absolute;
+    background-color: #FFFFFF;
+    top: -7px;        
+    transform: rotate(45deg);
+    border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+}
