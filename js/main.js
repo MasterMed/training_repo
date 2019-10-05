@@ -1,4 +1,11 @@
 $(document).ready(function () {
+    
+    $("#browse-menu").on("click", function() {
+        $("#browse-dropmenu").slideToggle();
+    });
+    $("#browse-dropmenu").on("mouseleave", function() {
+        $(this).slideUp();
+    });
 
     $(".feedback__slick_slider").slick({
         dots: true,
