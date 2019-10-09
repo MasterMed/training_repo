@@ -19,13 +19,96 @@
                 <div class="header__left">
                     <a class="logo" href=""><img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="pink bold800">D</span></a>
                     <form class="header__form" action="#">
-                        <div class="browse"><span>Browse <i class="fa fa-caret-down" aria-hidden="true"></i></span></div>
+                        <div id="browse-menu" class="browse"><span>Browse <i class="fa fa-caret-down" aria-hidden="true"></i></span></div>
+                        <div class="dropmenu browse__dropmenu" id="browse-dropmenu">
+                            <div class="dropmenu__header">Wooman</div>
+                            <ul class="dropmenu__linkslist">
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Blazers</a></li>
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Denim</a></li>
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Leggings/Pants</a></li>
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Skirts/Shorts</a></li>
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Accessories</a></li>
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Bags/Purses</a></li>
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Swimwear/Underwear</a></li>
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Nightwear</a></li>
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Shoes</a></li>
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Beauty</a></li>
+                            </ul>
+                            <div class="dropmenu__header">Men</div>
+                            <ul class="dropmenu__linkslist">
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tees/Tank tops</a></li>
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Shirts/Polos</a></li>
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters</a></li>
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweatshirts/Hoodies</a></li>
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Blazers</a></li>
+                                <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/vests</a></li>
+                            </ul>
+                        </div>
                         <input type="text" placeholder="Search for Item...">
                         <button class="button__search"><i class="fa fa-search" aria-hidden="true"></i></button>
-                    </form>
+                    </form>                    
                 </div>
                 <div class="header__right">
-                    <a href="#goToBascket" class="link_bascket"><img class="cart" src="img/cart.svg" alt="cart"></a>
+                    <div class="cart"><img class="cart__img" src="img/cart.svg" alt="cart">
+                        <div class="dropmenu cart__dropmenu">
+                            <div class="cart__goodin">
+                                <img src="img/incart/layer_43_1828.jpg">
+                                <div class="overwrite cart__overwrite">
+                                    <div class="overwrite__header">
+                                        Rebox Zane
+                                    </div>
+                                    <div class="overwrite__rate">
+                                        <span>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                    <div class="overwrite__quant">
+                                        1 x $250
+                                    </div>                                 
+                                </div>
+                                <div class="cart__delete">
+                                    <button class="cart__delete_btn"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                            <div class="cart__goodin">
+                                <img src="img/incart/layer_44_1837.jpg">
+                                <div class="overwrite cart__overwrite">
+                                    <div class="overwrite__header">
+                                        Rebox Zane
+                                    </div>
+                                    <div class="overwrite__rate">
+                                        <span>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                    <div class="overwrite__quant">
+                                        1 x $250
+                                    </div>                                 
+                                </div>
+                                <div class="cart__delete">
+                                    <button class="cart__delete_btn"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                            <div class="cart__total">
+                                <div>Total</div>
+                                <div>$500.00</div>
+                            </div>
+                            <button class="cart__button">Checkout</button>
+                            <button class="cart__button">Go to cart</button>
+                        </div>
+                    </div>
                     <a href="#goToProfilePage" class="button button__account">My Account &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a>
                 </div>
             </div>
@@ -33,13 +116,294 @@
         <nav class="nav">
             <div class="container nav__content">
                 <ul class="menu">
-                    <li class="menu__list"><a href="#" class="menu__link">Home</a></li>
-                    <li class="menu__list"><a href="#" class="menu__link">Man</a></li>
-                    <li class="menu__list"><a href="#" class="menu__link">Women</a></li>
-                    <li class="menu__list"><a href="#" class="menu__link">Kids</a></li>
-                    <li class="menu__list"><a href="#" class="menu__link">Accoseriese</a></li>
-                    <li class="menu__list"><a href="#" class="menu__link">Featured</a></li>
-                    <li class="menu__list"><a href="#" class="menu__link">Hot Deals </a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Home</a>
+                        <div class="dropmenu nav__dropmenu">
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Blazers</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Denim</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Leggings/Pants</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Skirts/Shorts</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                </ul>
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                </ul>
+                                <div class="dropmenu__image">
+                                    <img src="img/menu_img.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__list"><a href="#" class="menu__link">Man</a>
+                        <div class="dropmenu nav__dropmenu">
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Blazers</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Denim</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Leggings/Pants</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Skirts/Shorts</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                </ul>
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                </ul>
+                                <div class="dropmenu__image">
+                                    <img src="img/menu_img.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__list"><a href="#" class="menu__link">Women</a>
+                        <div class="dropmenu nav__dropmenu">
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Blazers</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Denim</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Leggings/Pants</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Skirts/Shorts</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                </ul>
+                                <div class="dropmenu__image">
+                                    <img src="img/menu_img.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__list"><a href="#" class="menu__link">Kids</a>
+                        <div class="dropmenu nav__dropmenu">
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Blazers</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Denim</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Leggings/Pants</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Skirts/Shorts</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                </ul>
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__list"><a href="#" class="menu__link">Accoseriese</a>
+                        <div class="dropmenu nav__dropmenu nav__dropmenu_last">
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Blazers</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Denim</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Leggings/Pants</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Skirts/Shorts</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                </ul>
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                </ul>
+                                <div class="dropmenu__image">
+                                    <img src="img/menu_img.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__list"><a href="#" class="menu__link">Featured</a>
+                        <div class="dropmenu nav__dropmenu nav__dropmenu_last">
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Blazers</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Denim</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Leggings/Pants</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Skirts/Shorts</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                </ul>
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                </ul>
+                                <div class="dropmenu__image">
+                                    <img src="img/menu_img.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__list"><a href="#" class="menu__link">Hot Deals </a>
+                        <div class="dropmenu nav__dropmenu nav__dropmenu_last">
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Blazers</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Denim</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Leggings/Pants</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Skirts/Shorts</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                </ul>
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropmenu__column">
+                                <div class="dropmenu__header">Wooman</div>
+                                <ul class="dropmenu__linkslist">
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Dresses</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Tops</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Sweaters/Knits</a></li>
+                                    <li class="dropmenu__list"><a href="#" class="dropmenu__link">Jackets/Coats</a></li>
+                                </ul>
+                                <div class="dropmenu__image">
+                                    <img src="img/menu_img.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </nav>

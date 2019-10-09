@@ -235,16 +235,87 @@ body > header {
   color: #a4a4a4;
   padding: 0 11px; }
 
-.link_bascket {
+.cart {
   height: 38px;
   width: 40px;
   margin-right: 24px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
+  .cart__dropmenu {
+    z-index: 3;
+    top: 39px;
+    padding: 1px 17px 17px 17px; }
+  .cart__dropmenu:before {
+    left: 14px; }
+  .cart:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.25); }
+    .cart:hover .cart__dropmenu {
+      display: block; }
+  .cart__goodin {
+    width: 230px;
+    border-bottom: 1px solid rgba(237, 237, 237, 0.74);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 16px 0; }
+  .cart__delete {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto; }
+    .cart__delete_btn {
+      font-size: 16px;
+      color: #c0c0c0;
+      cursor: pointer; }
+      .cart__delete_btn:hover {
+        transform: scale(1.2); }
+  .cart__total {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 0; }
+  .cart__button {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    width: 100%;
+    height: 50px;
+    border: 1.0px solid #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11px;
+    cursor: pointer; }
+    .cart__button:hover {
+      color: #f16d7f;
+      border-color: #f16d7f; }
 
-.link_bascket:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.25); }
+.overwrite {
+  margin-left: 14px; }
+  .overwrite__header {
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222; }
+  .overwrite__rate {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: #e4af48; }
+  .overwrite__quant {
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 13px;
+    text-transform: uppercase;
+    color: #f16d7f; }
 
 .button__account {
   width: 130px; }
@@ -403,7 +474,9 @@ body > header {
   left: 0; }
 
 .goods__card:hover {
-  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+  transition-duration: 0.3s; }
 
 .goods__card:hover .button__add_overlay {
   opacity: 1;

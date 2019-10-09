@@ -141,6 +141,8 @@
 }
 .goods__card:hover {
     box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.15);
+    transform: scale(1.05);
+    transition-duration: 0.3s;
 }
 .goods__card:hover .button__add_overlay {
     opacity: 1;
