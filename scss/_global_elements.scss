@@ -66,6 +66,9 @@ input::placeholder {
 .pink {
     color: $colorPink;    
 }
+.red {
+    color: $colorRed;
+}
 .light_grey {
     color: #b9b9b9;
 }
@@ -104,9 +107,13 @@ body>header {
     font-weight: 300;
     text-transform: uppercase;
     margin-right: 37px;
-}
-.logo__img {
-    margin-right: 13px;
+    &__img {
+        margin-right: 13px;
+    }
+    &:hover>img {
+        filter: hue-rotate(360deg);
+        transition: filter linear 0.7s;
+    }
 }
 .header__form {
     border: 1.0px solid #e6e6e6;    
@@ -243,6 +250,10 @@ body>header {
         box-shadow: 0 0 2px 1px rgba(0,0,0,0.25);
         & .cart__dropmenu {
             display: block;
+        }
+        &>img {
+            transform: rotate(360deg);
+            transition: transform ease 0.6s;
         }
     }
     &__goodin {

@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Document</title>
+        <title>Single Page</title>
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700i,900&display=swap" rel="stylesheet">
         <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
@@ -443,14 +443,32 @@
                             <form class="form_product_order" action="#">
                                 <div>
                                     <label for="formColor">Choose color</label>
-                                    <input list="colorClothes" name="color" id="formColor">
-                                    <datalist id="colorClothes">
-                                        <option label="red" value="red">
-                                    </datalist>
+                                    <select name="color" id="formColor">
+                                        <option value="003399" data-class="Col_Blue">Blue</option>
+                                        <option value="6600CC" data-class="Col_Blue_Violet">Blue-Violet</option>
+                                        <option value="663399" data-class="Col_Violet">Violet</option>
+                                        <option value="9933CC" data-class="Col_Red_Violet">Red-Violet</option>
+                                        <option value="CC0000" data-class="Col_Red" selected>Red</option>
+                                        <option value="FF3300" data-class="Col_Red_Orange">Red-Orange</option>
+                                        <option value="FF6600" data-class="Col_Orange">Orange</option>
+                                        <option value="FF9900" data-class="Col_Yellow_Orange">Yellow-Orange</option>
+                                        <option value="FFFF00" data-class="Col_Yellow">Yellow</option>
+                                        <option value="00CC00" data-class="Col_Yellow_Green">Yellow-Green</option>
+                                        <option value="006600" data-class="Col_Green">Green</option>
+                                        <option value="009999" data-class="Col_Blue_Green">Blue-Green</option>
+                                    </select>
                                 </div>
                                 <div>
                                     <label for="formSize">Choose size</label>
-                                    <select name="size" id="formSize"></select>
+                                    <select name="size" id="formSize">
+                                        <option value="size_xxs">XXS</option>
+                                        <option value="size_xs">XS</option>
+                                        <option value="size_s">S</option>
+                                        <option value="size_m">M</option>
+                                        <option value="size_l">L</option>
+                                        <option value="size_xl">XL</option>
+                                        <option value="size_xxl">XXL</option>
+                                    </select>
                                 </div>
                                 <div>
                                     <label for="formQuantity">Quantity</label>
