@@ -31,15 +31,15 @@
 }
 .offers__container {
     padding: 98px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include display-flex;
+    @include flex-wrap-wrap;
+    @include justify-content-between;
 }
 .offers_block {
     width: 560px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    @include display-flex;
+    @include flex-wrap-wrap;
+    @include flex-direction-column;
 }
 .offer {
     width: 560px;
@@ -106,21 +106,22 @@
     color: #9f9f9f;
 }
 .goods__space {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: -webkit-box;
+    @include display-flex;
+    @include flex-wrap-wrap;
+    @include justify-content-between;
 }
 .goods__card {
     width: 261px;
     margin-bottom: 32px;
+    position: relative;
 }
 .good_image {
     display: block;
     width: inherit;
     height: 280px;
     background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    background-size: cover;    
 }
 .good_image>img {
     height: 100%;
@@ -128,7 +129,7 @@
 }
 .button__add_overlay {
     width: 100%;
-    height: 100%;
+    height: 280px;
     background-color: rgba(58,56,56,0.83);
     opacity: 0;
     visibility: hidden;
@@ -163,8 +164,8 @@
     font-size: 13px;
     font-weight: 700;
     color: #FFF;
-    display: flex;
-    align-items: center;
+    @include display-flex;
+    @include align-items-center;
     background: rgba(0,0,0,0);
     cursor: pointer;
     justify-content: space-evenly;
@@ -194,15 +195,15 @@
     color: $colorPink;
 }
 .button__next_space {
-    display: flex;
-    justify-content: center;
+    @include display-flex;
+    @include justify-content-center;
     padding-top: 17px;
 }
 .button__next {
     width: 212px;
 }
 .container__advantages {
-    display: flex;
+    @include display-flex;
     padding-bottom: 97px;
 }
 .advantages__banner {
@@ -230,13 +231,13 @@
     height: 529px;
     background-color: #222224;
     color: #FFF;
-    display: flex;
-    flex-direction: column;
+    @include display-flex;
+    @include flex-direction-column;
     justify-content: space-evenly;
     padding: 0 36px;
 }
 .advantage_item {
-    display: flex;
+    @include display-flex;
 }
 .advantage {
     letter-spacing: 0.025em;
@@ -265,7 +266,7 @@
 }
 .container__feedback {    
     height: 100%;
-    display: flex;    
+    @include display-flex;   
 }
 .feedback__slider {
     padding-top: 111px;
@@ -274,7 +275,7 @@
     border-right: 1px solid #FFF;
 }
 .slider_item {
-    display: flex !important;
+    @include display-flex-important;
 }
 .slider_text {
     margin: 12px 72px 0 28px;    
@@ -322,9 +323,9 @@
 }
 .feedback__space {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-flex;
+    @include justify-content-center;
+    @include align-items-center;
 }
 .feedback__form_block {
     width: 438px;
@@ -345,7 +346,7 @@
 }
 .feedback__form {
     margin-top: 35px;
-    display: flex;    
+    @include display-flex;   
 }
 .feedback__form>button {
     width: 104px;
@@ -377,7 +378,7 @@
     padding-bottom: 89px;
 }
 .container__footer {
-    display: flex;
+    @include display-flex;
 }
 .footer_block {
     flex-basis: 100px;
@@ -425,12 +426,12 @@
 }
 .container__copyright {
     height: 79px;
-    display: flex;
-    justify-content: space-between;
+    @include display-flex;
+    @include justify-content-between;
 }
 .copyright_text {
-    display: flex;
-    align-items: center;
+    @include display-flex;
+    @include align-items-center;
     height: 79px;
     font-size: 16px;
     line-height: 42px;
@@ -439,21 +440,21 @@
     color: #7a7a7a;
 }
 .social_icons {
-    display: flex;
-    align-items: center;
+    @include display-flex;
+    @include align-items-center;
 }
 .social_icons>ul {
     list-style: none;
-    display: flex;
+    @include display-flex;
     flex-direction: row;
 }
 .social_icons>ul>li {
     margin-left: 8px;
 }
 .social_icons>ul>li>a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-flex;
+    @include justify-content-center;
+    @include align-items-center;
     width: 32px;
     height: 32px;
     background-color: #FFF;
@@ -474,9 +475,9 @@
 .container___header {
     height: 148px;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include display-flex;
+    @include align-items-center;
+    @include justify-content-between;
 }
 .page_header_h1 {
     font-size: 24px;
@@ -505,8 +506,8 @@
     border-bottom: 1.0px solid #eaeaea;
     padding-top: 11px;
     padding-bottom: 86px;
-    display: flex;
-    justify-content: center;
+    @include display-flex;
+    @include justify-content-center;
 }
 .product_info {
     margin-top: -86px;
@@ -577,8 +578,8 @@
 .materials_author {
     font-size: 14px;
     color: #2f2f2f;
-    display: flex;
-    justify-content: center;
+    @include display-flex;
+    @include justify-content-center;
 }
 .materials_author>div {
     margin: 0 22px;
@@ -592,14 +593,14 @@
     color: #ef5b70;
 }
 .product_order {
-    display: flex;
-    flex-wrap: wrap;
+    @include display-flex;
+    @include flex-wrap-wrap;
 }
 .form_product_order {
     width: 537px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include display-flex;
+    @include flex-wrap-wrap;
+    @include justify-content-between;
     margin: 0 auto;
     padding-top: 61px;
 }
@@ -659,9 +660,9 @@
     font-size: 16px;
     font-weight: 700;
     color: #ef5b70;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include display-flex;
+    @include align-items-center;
+    @include justify-content-center;
     cursor: pointer;
     &>img {
         margin-right: 10px;
@@ -689,7 +690,7 @@
 /* PRODUCT PAGE */
 .product__page {
     padding-top: 59px;
-    display: flex;
+    @include display-flex;
 }
 .product__page>aside {
     width: 243px;
@@ -699,8 +700,8 @@
     width: calc(100% - 292px);
 }
 .filter_group_1 {
-    display: flex;
-    justify-content: space-between;
+    @include display-flex;
+    @include justify-content-between;
     padding-bottom: 28px;
 }
 .filter_group {
@@ -727,8 +728,8 @@
     text-decoration: underline;
 }
 .filter_gr_size {
-    display: flex;
-    flex-wrap: wrap;
+    @include display-flex;
+    @include flex-wrap-wrap;
 }
 .filter_gr_size>label {
     width: 47px;
@@ -739,8 +740,8 @@
 }
 .price_range_result {
     padding-top: 21px;
-    display: flex;
-    justify-content: space-between;
+    @include display-flex;
+    @include justify-content-between;
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
@@ -750,14 +751,14 @@
     background-color: #f3f3f3;
     padding: 10px 0;
     margin-bottom: 48px;
-    display: flex;
-    justify-content: flex-start;
+    @include display-flex;
+    @include justify-content-start;
 }
 .sort_show_group {
     margin-left: 10px;
     background-color: #FFF;
     border: 1.0px solid #ebebeb;
-    display: flex;    
+    @include display-flex;   
 }
 .sort_show_label {
     font-size: 14px;
@@ -802,14 +803,14 @@
     padding-bottom: 114px;
 }
 .advantages__on_product>.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include display-flex;
+    @include flex-wrap-wrap;
+    @include justify-content-between;
 }
 .advantages__on_product>.container>.advantage_item {
     width: 308px;
-    display: flex;
-    flex-direction: column;
+    @include display-flex;
+    @include flex-direction-column;
 }
 .advantages__on_product>.container>.advantage_item>* {
     display: block;
@@ -821,9 +822,9 @@
     margin-top: 20px;
 }
 .product_navigation {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include display-flex;
+    @include flex-wrap-wrap;
+    @include justify-content-between;
     padding-bottom: 110px;
 }
 .pagination {
@@ -832,9 +833,9 @@
     background-color: #ffffff;
     border: 1.0px solid #ebebeb;
     border-radius: 3.0px;
-    display: flex;
+    @include display-flex;
     justify-content: space-around;
-    align-items: center;
+    @include align-items-center;
     font-size: 16px;
     font-weight: 400;
     color: #ef5b70;
@@ -985,49 +986,6 @@
 }
 /* DOUBLE RANGE END */
 
-/* CHECKBOXES */
-input[type="checkbox"] { 
-    display: none; 
-}
-input[type="checkbox"] + label {
-    display: block;
-    position: relative;
-    padding-left: 22px;    
-    color: #6f6e6e;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-}
-input[type="checkbox"] + label:last-child { 
-    margin-bottom: 0; 
-}
-input[type="checkbox"] + label:before {
-    content: '';
-    display: block;
-    width: 13px;
-    height: 13px;
-    border: 1px solid #dadad2;
-    position: absolute;
-    left: 0;
-    top: 1px;
-    -webkit-transition: all .12s, border-color .08s;
-    transition: all .12s, border-color .08s;
-}
-input[type="checkbox"]:checked + label:before {
-    width: 10px;
-    top: -3px;
-    left: 5px;
-    border-radius: 0;
-    border-color: #838383;
-    opacity: 1;
-    border-top-color: transparent;
-    border-left-color: transparent;
-    -webkit-transform: rotate(41deg);
-    transform: rotate(41deg);
-}
-/* CHECKBOXES END */
-
 /* COLORS */
 .Col {
     &_Blue {
@@ -1075,20 +1033,20 @@ input[type="checkbox"]:checked + label:before {
         padding-top: 90px;
     }
     &__caption {
-        display: flex;
+        @include display-flex;
         border-bottom: 1.0px solid #000;
         padding-bottom: 20px;
     }
     &__product {
-        display: flex;
+        @include display-flex;
         border-bottom: 1.0px solid #000;
         padding-top: 20px;
         padding-bottom: 25px;
     }
     &__buttons {
         padding-top: 44px;
-        display: flex;
-        justify-content: space-between;
+        @include display-flex;
+        @include justify-content-between;
         &>.cart__button {
             width: 235px;
             height: 50px;
@@ -1104,8 +1062,8 @@ input[type="checkbox"]:checked + label:before {
     }
     &__formcontainer {
         padding-top: 63px;
-        display: flex;
-        justify-content: space-between;
+        @include display-flex;
+        @include justify-content-between;
         padding-bottom: 79px;
     }
     &__form {
@@ -1131,8 +1089,8 @@ input[type="checkbox"]:checked + label:before {
         margin-top: 16px;
     }
     &__subtotal {
-        display: flex;
-        justify-content: space-between;
+        @include display-flex;
+        @include justify-content-between;
         width: 101px;
         font-size: 11px;
         font-weight: 400;
@@ -1181,15 +1139,15 @@ input[type="checkbox"]:checked + label:before {
     line-height: 20px;
     font-weight: 400;
     color: #656565;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-flex;
+    @include justify-content-center;
+    @include align-items-center;
     width: 150px;
     &__first {
         width: auto;
         flex-grow: 1;
-        display: flex;
-        justify-content: flex-start;
+        @include display-flex;
+        @include justify-content-start;
     }
     &__last {
         width: 60px;
@@ -1326,7 +1284,7 @@ input[type="checkbox"]:checked + label:before {
 }
 .drform {
     &__row {
-        display: flex;
+        @include display-flex;
     }
     &__column {
         flex-grow: 1;
@@ -1349,39 +1307,3 @@ input[type="checkbox"]:checked + label:before {
     margin-bottom: 33px;
 }
 /* CHECKOUT END */
-
-/* RADIOS */
-input[type="radio"] { 
-    display: none; 
-}
-input[type="radio"] + label {
-    display: block;
-    position: relative;
-    padding-left: 28px;
-    color: #6f6e6e;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-}
-input[type="radio"] + label:last-child { 
-    margin-bottom: 0; 
-}
-input[type="radio"] + label:before {
-    content: '';
-    display: block;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    border: 2.0px solid #ffffff;
-    box-shadow: 0 0 0 2px #555555;
-    position: absolute;
-    left: 0;
-    top: -1px;
-}
-input[type="radio"]:checked + label:before {  
-    background-color: #555555;
-    opacity: 1;
-}
-/* RADIOS END */
