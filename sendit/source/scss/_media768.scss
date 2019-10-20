@@ -1,0 +1,46 @@
+// media screen and (max-width: 768px)
+input[type="checkbox"] { 
+    & + label {
+        &:before {
+            width: 9px;
+            height: 9px;
+            top: -1px;
+            border: 1px solid #FFFFFF;
+        }
+    }
+    &:checked + label:before {
+        width: 8px;
+        top: -3px;
+        left: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.steps {
+    padding-top: 27px;
+    &__item {
+        
+    }
+    &__header {
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    
+}
+.recall {
+    &__header {
+        font-size: 28px;
+        margin-bottom: 11px;
+    }
+    & p {
+        font-size: 14px;
+    }
+}
