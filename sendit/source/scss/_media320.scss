@@ -1,0 +1,157 @@
+// media screen and (max-width: 320px)
+.button {
+    width: 100%;
+}
+input[type=text] {
+    width: calc(100% - 48px);
+}
+.block__header {
+    font-size: 28px;
+}
+
+header {
+    background-size: 248%;
+    background-position: -415px -11px;  
+}
+.header {
+    padding: 27px 21px;
+    &>nav {
+        @include display-flex;
+        @include justify-content-space-between;        
+    }
+    &__block {        
+        padding-top: 230px;
+    }
+    &__anotation {
+        color: $mainText;
+        &_big {
+            font-size: 32px;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+        &_small {
+            margin-top: 8px;
+            font-size: 24px;
+            font-weight: 900;
+            margin-bottom: 17px;
+        }
+    }
+}
+.page {
+    &__block {
+        padding: 17px 21px;
+    }
+    
+}
+.banner {
+    &__image {
+        margin-bottom: 25px;
+        & img {
+            width: 100%;
+        }        
+    }
+    &__header {
+        margin-bottom: 10px;
+        & h2 {
+            font-size: 18px;
+        }        
+    }
+    &__text {
+        margin-bottom: 12px;
+        & p {
+            font-size: 12px;
+        }        
+    }
+}
+.steps {
+    padding-top: 27px;
+    padding-bottom: 23px;
+    &__item {
+        & p {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 27px;
+        }
+    }
+    &__header {
+        margin-top: 27px;
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 7px;
+    }
+    &__bigtext {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    &__button {
+        margin-top: 9px;
+    }   
+}
+.recall {
+    padding-top: 32px;
+    padding-bottom: 7px;
+    & p {
+        margin-bottom: 14px;
+    }
+    & .input_white {
+        margin-bottom: 9px;
+    }
+    & label {
+        margin-top: 9px;
+        font-size: 10px;
+    }
+
+}
+.reviews {
+    
+    &__slider {
+        
+    }
+    &__photo {
+        width: 100px;
+    }
+}
+.advantages {
+    &__items {
+        padding-top: 12px;
+    }
+    &__item {
+        width: 86px;
+        padding-top: 13px;
+    }
+    &__icon {
+        width: 86px;
+        height: 86px;
+        & .icon {
+            &_free {
+                width: 58px;
+                height: 34px;
+            }
+            &_choice {
+                width: 34px;
+                height: 41px;
+            }
+            &_star {
+                width: 36px;
+                height: 36px;
+            }
+            &_order {
+                width: 37px;
+                height: 32px;
+            }
+            &_support {
+                width: 38px;
+                height: 36px;
+            }
+            &_barcode {
+                width: 40px;
+                height: 31px;
+            }
+        }
+    }
+    &__header {
+        font-size: 10px;
+        padding-top: 13px;
+    }
+   
+}

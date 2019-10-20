@@ -1,0 +1,55 @@
+@mixin placeholder {
+    font-family: Myriad Pro;
+    font-size: 16px;
+    color: #008DCD;
+}
+@mixin placeholder-white {
+    color: #FFFFFF;
+}
+@mixin display-flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+@mixin flex-wrap-wrap {    
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+@mixin justify-content-center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+@mixin justify-content-space-between {    
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@mixin align-items-center {    
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+
+
+
+
+@mixin border-radius($rad) {
+    -moz-border-radius: $rad;
+    -webkit-border-radius: $rad;
+    -khtml-border-radius: $rad;
+    border-radius: $rad;
+}
+@mixin box-shadow($param) {
+    -webkit-box-shadow: $param;
+    -moz-box-shadow: $param;
+    box-shadow: $param;
+}

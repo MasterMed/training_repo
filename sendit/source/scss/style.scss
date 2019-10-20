@@ -1,0 +1,177 @@
+@import "_variables.scss";
+@import "_mixines.scss";
+@import "_fonts.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+.button {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 360px;
+    padding: 18px 0 15px;
+    background: #008DCD;
+    @include border-radius(30px);
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        @include box-shadow(0px 4px 15px rgba(27, 170, 235, 0.45));
+    }
+    &_yellow {
+        color: #363636;
+        background: #FFCC00;
+        border-style: none;
+        &:hover {
+            @include box-shadow(0px 4px 20px rgba(255, 204, 0, 0.55));
+        }
+    }
+}
+input[type=text] {
+    width: 360px;
+    font-size: 16px;
+    color: #008DCD;
+    padding: 17px 24px;
+    border: 1px solid #008DCD;
+    @include border-radius(30px);
+    background: #FFFFFF;
+    &.input_white {
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        background: #008DCD;
+    }
+}
+input[type=text]::-moz-placeholder {
+    @include placeholder;
+}
+input[type=text]::-webkit-input-placeholder {
+    @include placeholder;
+}
+input[type=text]:-ms-input-placeholder {
+    @include placeholder;
+}
+input[type=text]::-ms-input-placeholder {
+    @include placeholder;
+}
+input[type=text]::placeholder {
+    @include placeholder;
+}
+input[type=text].input_white::-moz-placeholder {
+    @include placeholder-white;
+}
+input[type=text].input_white::-webkit-input-placeholder {
+    @include placeholder-white;
+}
+input[type=text].input_white:-ms-input-placeholder {
+    @include placeholder-white;
+}
+input[type=text].input_white::-ms-input-placeholder {
+    @include placeholder-white;
+}
+input[type=text].input_white::placeholder {
+    @include placeholder-white;
+}
+input[type="checkbox"] { 
+    display: none;
+    & + label {
+        display: block;
+        position: relative;
+        padding-left: 22px;    
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        &:last-child { 
+            margin-bottom: 0; 
+        }
+        &:before {
+            content: '';
+            display: block;
+            width: 13px;
+            height: 13px;
+            border: 1px solid #000000;
+            position: absolute;
+            left: 0;
+            top: 1px;
+            -webkit-transition: all .12s, border-color .08s;
+            transition: all .12s, border-color .08s;
+        }
+    }
+    &:checked + label:before {
+        width: 10px;
+        top: -3px;
+        left: 5px;
+        border-radius: 0;
+        opacity: 1;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        -webkit-transform: rotate(41deg);
+        transform: rotate(41deg);
+    }
+}
+.block__header {
+    text-transform: uppercase;
+}
+body {
+    background-color: $bodyBackground;
+    font-family: Myriad Pro;
+    color: $mainText;
+}
+header {
+    background: $headerBackground url(../img/header_bckgr.jpg) no-repeat;
+}
+.page {
+
+}
+
+.banner {
+    &__image {
+
+    }
+}
+.steps {
+    background: $blockCustomBackground;
+}
+.recall {
+    background: $recallBacground;
+    color: #FFFFFF;
+    &__header {        
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+}
+.reviews {
+    background: $blockCustomBackground;
+    &__intro {
+        @include display-flex;
+    }
+}
+.advantages {
+    &__items {
+        @include display-flex;
+        @include flex-wrap-wrap;
+        @include justify-content-space-between;
+    }
+    &__icon {
+        background: $blockCustomBackground;
+        @include border-radius(50%);
+        @include display-flex;
+        @include justify-content-center;
+        @include align-items-center;
+    }
+    &__header {
+        text-align: center;
+    }
+}
+
+
+
+@import "_media768.scss";
+
+@import "_media320.scss";
